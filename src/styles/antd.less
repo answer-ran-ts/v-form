@@ -1,0 +1,61 @@
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0;
+}
+.ant-table-thead {
+  background: #fff !important;
+  border-radius: 4px 4px 0px 0px;
+  height: 46px;
+}
+
+.ant-table-thead > tr > th {
+  font-size: 14px;
+  font-family:
+    PingFang SC-Regular,
+    PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ant-table-fixed-left {
+  box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.15) !important;
+}
+.ant-table-fixed-right {
+  box-shadow: -6px 0 6px -4px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ant-table-tbody > tr {
+  color: rgba(0, 0, 0, 0.9);
+
+  td {
+    line-height: 24px;
+    height: 30px;
+    font-size: 14px;
+    font-family:
+      PingFang SC-Regular,
+      PingFang SC;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.ant-table-tbody td .operation{
+  a + a {
+    margin-left: 1rem;
+  }
+}
+.ant-table-tbody td .operation{
+  a {
+    position: relative;
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      display: inline-block;
+      height: 16px;
+      vertical-align: middle;
+      width: 2px;
+      margin: 0 6px;
+      border-inline-start: 1px solid rgba(5, 5, 5, 0.08);
+    }
+  }
+}
